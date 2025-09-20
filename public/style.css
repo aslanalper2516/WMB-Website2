@@ -233,14 +233,14 @@ h6 { font-size: 1.125rem; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-xl);
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .nav-logo {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   background: var(--gold-gradient);
   -webkit-background-clip: text;
@@ -257,7 +257,7 @@ h6 { font-size: 1.125rem; }
 
 .nav-links {
   display: flex;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
   align-items: center;
 }
 
@@ -267,8 +267,9 @@ h6 { font-size: 1.125rem; }
   font-weight: 500;
   position: relative;
   transition: all var(--transition-normal);
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-md);
+  font-size: 0.9rem;
 }
 
 .nav-link::after {
@@ -296,13 +297,14 @@ h6 { font-size: 1.125rem; }
   background: var(--accent-gradient);
   color: var(--white);
   text-decoration: none;
-  padding: var(--space-md) var(--space-xl);
+  padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
   font-weight: 600;
   transition: all var(--transition-bounce);
   box-shadow: var(--shadow-lg);
   position: relative;
   overflow: hidden;
+  font-size: 0.85rem;
 }
 
 .menu-btn::before {
@@ -334,6 +336,7 @@ h6 { font-size: 1.125rem; }
   justify-content: center;
   overflow: hidden;
   padding: var(--space-3xl) var(--space-xl);
+  margin-top: 80px;
 }
 
 .image-slider {
@@ -730,7 +733,7 @@ section {
 /* Menu Page Styles */
 .navbar {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   align-items: center;
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
@@ -762,9 +765,9 @@ section {
 .navbar-categories {
   display: flex;
   gap: var(--space-md);
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -822,7 +825,7 @@ section {
   width: 50px;
   height: 50px;
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all var(--transition-bounce);
@@ -1106,11 +1109,11 @@ h2, h3, h4, h5, h6 {
 
 @keyframes bounceIn {
   0% {
-    opacity: 0;
+  opacity: 0;
     transform: scale(0.3);
-  }
+}
   50% {
-    opacity: 1;
+  opacity: 1;
     transform: scale(1.05);
   }
   70% {
@@ -1128,15 +1131,15 @@ h2, h3, h4, h5, h6 {
     --space-xl: 1.5rem;
     --space-2xl: 2rem;
     --space-3xl: 2.5rem;
-  }
-  
-  .nav-container {
+}
+
+.nav-container {
     flex-direction: column;
-    gap: var(--space-lg);
-    padding: var(--space-lg);
-  }
-  
-  .nav-links {
+    gap: var(--space-md);
+    padding: var(--space-md);
+}
+
+.nav-links {
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--space-md);
@@ -1150,12 +1153,16 @@ h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
   }
   
-  .about-content {
+  .hero-section {
+    margin-top: 100px;
+  }
+
+.about-content {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
-  }
-  
-  .branches-grid {
+}
+
+.branches-grid {
     grid-template-columns: 1fr;
   }
   
@@ -1181,7 +1188,7 @@ h2, h3, h4, h5, h6 {
   
   .navbar-categories button {
     padding: var(--space-sm) var(--space-lg);
-    font-size: 0.9rem;
+  font-size: 0.9rem;
     min-width: 120px;
   }
   
@@ -1243,7 +1250,7 @@ h2, h3, h4, h5, h6 {
   }
   
   .menu-item h3 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
   }
   
   .menu-item-price {
@@ -1256,6 +1263,10 @@ h2, h3, h4, h5, h6 {
   
   .slide-content p {
     font-size: 1rem;
+  }
+  
+  .hero-section {
+    margin-top: 120px;
   }
 }
 
